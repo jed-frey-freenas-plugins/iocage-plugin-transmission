@@ -20,7 +20,7 @@
    "pkgs" : [
       "transmission-daemon",
       "transmission-web",
-      "www/nginx",
+      "nginx",
       "openmdns"
    ],
    "packagesite" : "http://pkg.FreeBSD.org/${ABI}/quarterly",
