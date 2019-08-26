@@ -1,5 +1,11 @@
 #!/bin/sh
+# To disable any post_install scripts, change suffix from .sh
 
-/root/post_install_scripts/01_transmission.sh
-/root/post_install_scripts/04_nginx.sh
-/root/post_install_scripts/05_svscan.sh
+echo '##### Plugin Configuration #####' > /root/plugin_config
+
+for SCRIPT in  `ls /post_install/*.sh`
+do                                     # for SCRIPT {
+echo "~~~~~~~~~~ ${SCRIPT} ~~~~~~~~~~" # Echo Das Script
+sh -c "${SCRIPT}"                      # Run das script.
+done                                   # }
+cat /root/plugin_config

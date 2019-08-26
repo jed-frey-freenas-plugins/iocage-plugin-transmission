@@ -15,7 +15,8 @@
         "transmission-daemon",
         "transmission-web",
         "nginx",
-        "openmdns"
+        "openmdns",
+        "openvpn"
     ],
     "plugin_schema": "2",
     "properties": {
