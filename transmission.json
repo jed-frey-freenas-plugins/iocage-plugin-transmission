@@ -12,6 +12,7 @@
     "official": false,
     "packagesite": "http://pkg.FreeBSD.org/${ABI}/quarterly",
     "pkgs": [
+	"daemontools",
         "transmission-daemon",
         "transmission-web",
         "nginx",
@@ -25,7 +26,8 @@
         "boot": "on",
         "bpf": "yes",
         "dhcp": "on",
-        "vnet": "on"
+        "vnet": "on",
+	"allow_tun": "1"
     },
     "release": "12.0-RELEASE"
 }
