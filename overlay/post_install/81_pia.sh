@@ -8,9 +8,8 @@ mkdir -p /usr/local/etc/openvpn
 unzip -d /usr/local/etc/openvpn /tmp/openvpn-strong.zip
 
 # Hack
-pkg install -y rename
 /usr/local/bin/renamex -"s/ /_/g" /usr/local/etc/openvpn/*.ovpn
-pkg remave -y rename
+pkg remove -y rename
 
 # Neutral
 sysrc -f /root/plugin_config pia_server=Switzerland
