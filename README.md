@@ -1,2 +1,1 @@
-# iocage-plugin-transmission
-Artifact file(s) for Transmission iocage plugin
+# Transmission+PrivateInternetAccess iocage plugin 
