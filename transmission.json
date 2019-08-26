@@ -12,6 +12,7 @@
     "official": false,
     "packagesite": "http://pkg.FreeBSD.org/${ABI}/quarterly",
     "pkgs": [
+	"rename",
 	"daemontools",
         "transmission-daemon",
         "transmission-web",
