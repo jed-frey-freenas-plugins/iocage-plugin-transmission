@@ -12,11 +12,6 @@ unzip -d /usr/local/etc/openvpn /tmp/openvpn-strong.zip
 pkg remove -y rename
 
 # Neutral
-sysrc -f /root/plugin_config pia_server=Switzerland
-
-read -p "PIA User: " USER
-read -p "PIA Pass: " PASS
-echo ${USER} > /opt/openvpn/pass.txt
-echo ${PASS} >> /opt/openvpn/pass.txt
+sysrc -f /root/plugin_config pia_server=CA_Toronto
 
 chmod 0600 /opt/openvpn/pass.txt
